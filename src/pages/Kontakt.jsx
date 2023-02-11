@@ -47,7 +47,7 @@ function Kontakt() {
         >
           <img
             src="./assets/img/GMap.PNG"
-            style={{ height: screenHeight / 1.3 }}
+            style={{ maxHeight: screenHeight / 1.3 }}
           />
         </a>
       </div>
