@@ -24,7 +24,9 @@ function Kontakt(props) {
           <br></br>
           <div style={{ display: "flex" }}>
             <img src="./assets/logos/mail.svg" className="plogo" />
-            konstruktorgrupa01@gmail.com
+            <a href="mailto:konstruktorgrupa01@gmail.com">
+              konstruktorgrupa01@gmail.com
+            </a>
           </div>
           <br></br>
           <div style={{ display: "flex" }}>
