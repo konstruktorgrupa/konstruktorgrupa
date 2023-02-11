@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Menu(props) {
-  const [naslovnaS, setNaslovnaS] = useState("black");
+  const [naslovnaS, setNaslovnaS] = useState("white");
   const [slikeS, setSlikeS] = useState("none");
   const [uslugeS, setUslugeS] = useState("none");
   const [kontktS, setKontaktS] = useState("none");
@@ -21,7 +21,7 @@ function Menu(props) {
     for (let i = 0; i < menuItems.length; i++) {
       if (mItem === menuItems[i]) {
         document.getElementById(menuItems[i]).style.display = "block";
-        menuSelCol[i]("black");
+        menuSelCol[i]("white");
       } else {
         document.getElementById(menuItems[i]).style.display = "none";
         menuSelCol[i]("blue");
