@@ -10,7 +10,7 @@
   position: absolute;
   /* left: 10px;
   top: 10px; */
-  height: 100em;
+  height: 50em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
