@@ -11,7 +11,7 @@ function Usluge() {
         top: 0,
         left: 0,
         fontSize: "20px",
-        backgroundColor: "black",
+        // backgroundColor: "black",
         height: "100%",
         width: "100%",
       }}
