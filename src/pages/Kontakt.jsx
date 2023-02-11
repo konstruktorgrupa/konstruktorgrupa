@@ -7,8 +7,8 @@ function Kontakt(props) {
       style={{
         display: "none",
         position: "absolute",
-        top: "100px",
-        left: "100px",
+        top: "10px",
+        left: "10px",
       }}
     >
       <div>
