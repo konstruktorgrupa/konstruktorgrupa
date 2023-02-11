@@ -5,7 +5,7 @@ function Home() {
   return (
     <div id="naslovna">
       <div>
-          <img src="/logos/klogo.jpg" className="klogo" />
+          <img src="./assets/logos/klogo.jpg" className="klogo" />
       </div>
     </div>
   )
