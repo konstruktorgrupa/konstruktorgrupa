@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Menu from "./comp/Menu";
-import Home from "./pages/Home";
+import Naslovna from "./pages/Naslovna";
 import Slike from "./pages/Slike";
 import Kontakt from "./pages/Kontakt";
 import ONama from "./pages/ONama";
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <Menu screenWidth={screenWidth} />
-      <Home />
+      <Naslovna />
       <Slike screenWidth={screenWidth} />
       <Kontakt screenWidth={screenWidth} />
       <ONama />
