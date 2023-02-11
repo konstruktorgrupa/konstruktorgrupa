@@ -32,7 +32,7 @@ function Naslovna() {
       <div>
         <img
           style={{ position: "absolute", top: 0, left: 0 }}
-          src={"./assets/img/0.jpg"}
+          src={"./assets/img/00.PNG"}
         />
       </div>
       {/* <div
