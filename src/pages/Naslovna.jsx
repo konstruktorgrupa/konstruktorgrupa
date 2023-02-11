@@ -38,7 +38,7 @@ function Naslovna() {
             maxWidth: "100%",
             maxHeight: "100%",
           }}
-          src={"./assets/logos/naslovna.jpg"}
+          src={"./assets/logos/naslovna.png"}
         />
       </div>
       {/* <div
