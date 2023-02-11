@@ -48,7 +48,7 @@ function Kontakt(props) {
           target="_blank"
         >
           <img
-            src="./assets/img/GMap.PNG"
+            src="./assets/logos/GMap.PNG"
             style={{ maxHeight: props.screenWidth / 1.3 }}
           />
         </a>

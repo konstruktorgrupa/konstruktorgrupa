@@ -19,7 +19,7 @@ function SlikaFocus(props) {
         textAlign: "center",
       }}
     >
-      <img id="imgSrc" style={{ height: "100%", maxWidth: "100%" }} />
+      <img id="imgSrc" style={{ maxHeight: "100%", maxWidth: "100%" }} />
 
       <button
         style={{

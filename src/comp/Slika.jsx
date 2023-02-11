@@ -1,4 +1,3 @@
-import { useState } from "react";
 import SlikaFocus from "./SlikaFocus";
 
 function Slika(props) {
@@ -12,7 +11,7 @@ function Slika(props) {
     <div>
       <SlikaFocus />
       <img
-        style={{ width: props.screenWidth / 5 }}
+        style={{ maxWidth: props.screenWidth / 5, maxHeight: "250px" }}
         src={props.img}
         onClick={ImageBig}
       />

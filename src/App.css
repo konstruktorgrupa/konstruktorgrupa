@@ -92,28 +92,3 @@ height: 150px;
 .read-the-docs {
   color: #888;
 }
-
-
-
-
-  .board {
-    display: grid;
-    grid-template-columns: repeat(8, 36px);
-  }
-
-  .square {
-    width: 36px;
-    height: 36px;
-    background: white;
-  }
-
-  .square:nth-child(16n + 1),
-  .square:nth-child(16n + 3),
-  .square:nth-child(16n + 5),
-  .square:nth-child(16n + 7),
-  .square:nth-child(16n + 10),
-  .square:nth-child(16n + 12),
-  .square:nth-child(16n + 14),
-  .square:nth-child(16n + 16) {
-    background: red;
-  }
