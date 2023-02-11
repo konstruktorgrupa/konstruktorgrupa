@@ -26,12 +26,12 @@
   font-size: 25px
 }
 .menu:hover {
-  background-image: url('/public./assets/img/sahovnica.svg');
+  background-image: url('/public/assets/img/sahovnica.svg');
   font-weight: bold;
   font-size: 35px
 }
 .menu.react:hover {
-  background-image: url('/public./assets/img/sahovnica.svg');
+  background-image: url('/public/assets/img/sahovnica.svg');
 }
 
 @keyframes logo-spin {
