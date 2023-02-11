@@ -24,7 +24,7 @@ function Slike(props) {
   if (checkRun === false) {
     for (let i = 0; i < imgList.length; i++) {
       images.push(
-        <div className="grid-item">
+        <div key={i} className="grid-item">
           <Slika
             screenWidth={props.screenWidth}
             img={`./assets/img/${imgList[i]}`}
