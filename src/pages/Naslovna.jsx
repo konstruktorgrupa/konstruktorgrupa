@@ -33,7 +33,7 @@ function Naslovna() {
         <img
           style={{
             position: "absolute",
-            top: 0,
+            top: 38,
             left: 0,
             maxWidth: "100%",
             maxHeight: "100%",
