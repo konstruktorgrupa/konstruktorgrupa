@@ -51,35 +51,35 @@ function Menu(props) {
         style={{ width: props.screenWidth / 5, color: naslovnaS }}
         onClick={() => MenuHandle("naslovna")}
       >
-        Naslovna
+        NASLOVNA
       </h1>
       <h1
         className="menu"
         style={{ width: props.screenWidth / 5, color: slikeS }}
         onClick={() => MenuHandle("slike")}
       >
-        Slike
+        SLIKE
       </h1>
       <h1
         className="menu"
         style={{ width: props.screenWidth / 5, color: uslugeS }}
         onClick={() => MenuHandle("usluge")}
       >
-        Usluge
+        USLUGE
       </h1>
       <h1
         className="menu"
         style={{ width: props.screenWidth / 5, color: kontktS }}
         onClick={() => MenuHandle("kontakt")}
       >
-        Kontakt
+        KONTAKT
       </h1>
       <h1
         className="menu"
         style={{ width: props.screenWidth / 5, color: onamaS }}
         onClick={() => MenuHandle("onama")}
       >
-        O Nama
+        O NAMA
       </h1>
     </div>
   );

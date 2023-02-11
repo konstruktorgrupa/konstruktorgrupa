@@ -28,7 +28,7 @@
 }
 .menu:hover {
   /* background-image: url('/public/assets/img/sahovnica.svg'); */
-  background: -webkit-linear-gradient(red, white, blue);
+  background: -webkit-linear-gradient(red, red,red, white, white, blue, blue, blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
