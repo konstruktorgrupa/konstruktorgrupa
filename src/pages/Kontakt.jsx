@@ -34,7 +34,7 @@ function Kontakt(props) {
             >
               <img
                 src="./assets/logos/facebook.svg"
-                style={{ height: "160px" }}
+                style={{ height: "50px" }}
               />
             </a>
           </div>
