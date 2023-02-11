@@ -1,6 +1,6 @@
-function Kontakt() {
-  let screenHeight = window.innerHeight;
+import { useState } from "react";
 
+function Kontakt(props) {
   return (
     <div
       id="kontakt"
@@ -47,7 +47,7 @@ function Kontakt() {
         >
           <img
             src="./assets/img/GMap.PNG"
-            style={{ maxHeight: screenHeight / 1.3 }}
+            style={{ maxHeight: props.screenWidth / 1.3 }}
           />
         </a>
       </div>
