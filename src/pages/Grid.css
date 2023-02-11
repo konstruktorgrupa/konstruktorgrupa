@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.grid-container-usluge {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 10px;
+}
