@@ -19,7 +19,7 @@ function Kontakt(props) {
           <br></br>
           <div style={{ display: "flex" }}>
             <img src="./assets/logos/phone.svg" className="plogo" />
-            +385 97 662 0046
+            <a href="tel:+385 97 662 0046">+385 97 662 0046</a>
           </div>
           <br></br>
           <div style={{ display: "flex" }}>
