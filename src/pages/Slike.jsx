@@ -27,7 +27,7 @@ function Slike(props) {
         <div className="grid-item">
           <Slika
             screenWidth={props.screenWidth}
-            img={`/assets/img/${imgList[i]}`}
+            img={`./assets/img/${imgList[i]}`}
           />
         </div>
       );
