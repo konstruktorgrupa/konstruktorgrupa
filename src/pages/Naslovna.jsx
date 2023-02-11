@@ -31,8 +31,14 @@ function Naslovna() {
     <div id="naslovna">
       <div>
         <img
-          style={{ position: "absolute", top: 0, left: 0 }}
-          src={"./assets/img/00.PNG"}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            maxWidth: "100%",
+            maxHeight: "100%",
+          }}
+          src={"./assets/img/naslovna.PNG"}
         />
       </div>
       {/* <div
@@ -50,10 +56,19 @@ function Naslovna() {
       {/* {sahovnica} */}
 
       {/* <div>{sahovnica}</div> */}
-
+      {/* 
       <div>
-        <img src="./assets/logos/Logo 2022.png" className="klogo" />
-      </div>
+        <img
+          style={{
+            position: "absolute",
+            top: 50,
+            left: 50,
+            maxWidth: "20%",
+            maxHeight: "20%",
+          }}
+          src="./assets/logos/Logo 2022.png"
+        />
+      </div> */}
     </div>
   );
 }
