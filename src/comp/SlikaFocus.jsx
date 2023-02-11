@@ -23,9 +23,9 @@ function SlikaFocus(props) {
 
       <button
         style={{
-          position: "absolute",
-          top: "50px",
-          right: "150px",
+          position: "fixed",
+          top: "20px",
+          right: "20px",
           height: "50px",
           width: "50px",
           backgroundColor: "rgb(215,255,0,0.8",
