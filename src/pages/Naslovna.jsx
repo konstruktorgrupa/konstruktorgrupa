@@ -1,17 +1,17 @@
 import Sahovnica from "../comp/Sahovnica";
 
 let sahovnica = [];
-let color = "red";
+let color = "rgb(255, 0, 0,0.5)";
 
 const isEven = (number) => (number & 1) === 0;
 let screenHeight = window.innerHeight;
 let screenWidth = window.innerWidth;
 for (let e = 0; e < screenWidth / 20; e++) {
   for (let i = 0; i < screenHeight / 20; i++) {
-    if (color === "red") {
+    if (color === "rgb(255, 0, 0,0.5)") {
       color = "none";
     } else {
-      color = "red";
+      color = "rgb(255, 0, 0,0.5)";
     }
     sahovnica.push(
       <div
@@ -36,7 +36,7 @@ function Naslovna() {
           position: "absolute",
           top: 0,
           left: 0,
-          backgroundColor: "white",
+          backgroundColor: "rgb(255, 255, 255,0.5)",
           width: "101vw",
           height: "101vh",
         }}
