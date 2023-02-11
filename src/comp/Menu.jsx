@@ -39,7 +39,7 @@ function Menu(props) {
         display: "flex",
         backgroundColor: "rgb(215,255,0,0.9",
         zIndex: 10,
-        fontSize: "30px",
+        // fontSize: "30px",
         color: "blue",
         height: '300px',
         margin: 0,

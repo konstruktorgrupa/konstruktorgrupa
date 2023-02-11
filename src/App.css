@@ -23,12 +23,12 @@
 
 
 .menu {
-  font-size: 90px
+  font-size: 25px
 }
 .menu:hover {
   background-image: url('/public/img/sahovnica.svg');
   font-weight: bold;
-  font-size: 100px
+  font-size: 35px
 }
 .menu.react:hover {
   background-image: url('/public/img/sahovnica.svg');
