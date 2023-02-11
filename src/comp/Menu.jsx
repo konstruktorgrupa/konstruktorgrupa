@@ -41,7 +41,7 @@ function Menu(props) {
         zIndex: 10,
         // fontSize: "30px",
         color: "blue",
-        height: '300px',
+        // height: '300px',
         margin: 0,
         padding: 0,
       }}
