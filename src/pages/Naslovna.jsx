@@ -1,8 +1,8 @@
 import "./Grid.css";
 
 function Naslovna(props) {
-  let desk = props.screenWidth > props.screenHeight ? 2 : 0;
-  let mob = props.screenWidth < props.screenHeight ? 2 : 0;
+  let desk = props.screenWidth > props.screenHeight ? 1 : 0;
+  let mob = props.screenWidth < props.screenHeight ? 1 : 0;
 
   console.log(
     "🚀 ~ file: Naslovna.jsx:36 ~ Naslovna ~ props.screenWidth",
