@@ -21,24 +21,57 @@ const imgList = [
 ];
 
 let images = [];
-let checkRun = false;
+let checkRun = 0;
 
 function Slike(props) {
-  if (checkRun === false) {
-    for (let i = 0; i < imgList.length; i++) {
+  const [slike, setSlike] = useState([]);
+
+  function imageExists(url) {
+    return new Promise((resolve) => {
+      var img = new Image();
+      img.addEventListener("load", () => resolve(true));
+      img.addEventListener("error", () => resolve(false));
+      img.src = url;
+    });
+  }
+
+  if (checkRun < 1) {
+    images = [];
+    let index = 1;
+    let checkImg = false;
+
+    LoadImgs();
+    function LoadImgs() {
+      // for (let i = 0; i < imgList.length; i++) {
       images.push(
-        <div key={i} className="grid-item">
+        <div key={index} className="grid-item">
           <Slika
             screenWidth={props.screenWidth}
-            img={`./assets/img/${imgList[i]}`}
+            img={`./assets/img/${imgList[index]}`}
           />
         </div>
       );
+      const url = `/assets/img/${index + 1}.png`;
+      imageExists(url).then((ok) => (checkImg = ok));
+      setTimeout(() => {
+        console.log("🚀 ~ file: Slike.jsx:50 ~ LoadImgs ~ checkImg", checkImg);
+        if (checkImg === true) {
+          LoadImgs();
+          index++;
+        }
+      }, 50);
     }
-    checkRun = true;
+
+    checkRun++;
   }
 
-  console.log("🚀 ~ file: Slike.jsx:30 ~ images", images);
+  setTimeout(() => ImageRdy(), 2500);
+  function ImageRdy() {
+    setSlike(images);
+    console.log("🚀 ~ file: Slike.jsx:63 ~ setTimeout ~ images", images);
+    console.log("🚀 ~ file: Slike.jsx:63 ~ setTimeout ~ slike", slike);
+  }
+
   return (
     <div
       id="slike"
@@ -52,37 +85,9 @@ function Slike(props) {
     >
       <div className="grid-container">
         {/* <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"/assets/img/20.PNG"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/30.PNG"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/3.jpg"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/4.jpg"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/5.jpg"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/6.jpg"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/7.jpg"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/8.jpg"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/9.jpg"} />
-        </div>
-        <div className="grid-item">
-          <Slika screenWidth={props.screenWidth} img={"./assets/img/10.jpg"} />
+          <Slika screenWidth={props.screenWidth} img={"./assets/img/16.jpg"} />
         </div> */}
-
-        {images}
+        {slike}
       </div>
     </div>
   );
