@@ -17,7 +17,6 @@ function App() {
     "resize",
     function (event) {
       setScreenWidth(window.innerWidth);
-      console.log("🚀 ~ file: Menu.jsx:48 ~ Menu ~ screenWidth", screenWidth);
     },
     true
   );

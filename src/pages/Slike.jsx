@@ -54,7 +54,7 @@ function Slike(props) {
       const url = `/assets/img/${index + 1}.png`;
       imageExists(url).then((ok) => (checkImg = ok));
       setTimeout(() => {
-        console.log("🚀 ~ file: Slike.jsx:50 ~ LoadImgs ~ checkImg", checkImg);
+        // console.log("🚀 ~ file: Slike.jsx:50 ~ LoadImgs ~ checkImg", checkImg);
         if (checkImg === true) {
           LoadImgs();
           index++;
@@ -68,8 +68,8 @@ function Slike(props) {
   setTimeout(() => ImageRdy(), 2500);
   function ImageRdy() {
     setSlike(images);
-    console.log("🚀 ~ file: Slike.jsx:63 ~ setTimeout ~ images", images);
-    console.log("🚀 ~ file: Slike.jsx:63 ~ setTimeout ~ slike", slike);
+    // console.log("🚀 ~ file: Slike.jsx:63 ~ setTimeout ~ images", images);
+    // console.log("🚀 ~ file: Slike.jsx:63 ~ setTimeout ~ slike", slike);
   }
 
   return (
@@ -87,7 +87,7 @@ function Slike(props) {
         {/* <div className="grid-item">
           <Slika screenWidth={props.screenWidth} img={"./assets/img/16.jpg"} />
         </div> */}
-        {slike}
+        {/* {slike} */}
       </div>
     </div>
   );

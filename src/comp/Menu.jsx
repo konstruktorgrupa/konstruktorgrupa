@@ -44,6 +44,7 @@ function Menu(props) {
         // height: '300px',
         margin: 0,
         padding: 0,
+        // height: "7%",
       }}
     >
       <h1
