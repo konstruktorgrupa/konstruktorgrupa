@@ -1,13 +1,10 @@
 import "./Grid.css";
 
 function Naslovna(props) {
-  let desk = props.screenWidth > props.screenHeight ? 1 : 0;
+  let desk = props.screenWidth > props.screenHeight ? 1 : -1;
   let mob = props.screenWidth < props.screenHeight ? 1 : 0;
 
-  console.log(
-    "🚀 ~ file: Naslovna.jsx:36 ~ Naslovna ~ props.screenWidth",
-    props.screenWidth / 5
-  );
+  let textMOD = props.screenWidth > props.screenHeight ? 9 : 4;
 
   let nasSlike = [];
   function NaslovnaSlike() {
@@ -24,7 +21,9 @@ function Naslovna(props) {
               top: (e * props.screenWidth) / (3 + desk) + 35,
               maxWidth: props.screenWidth / (3 + desk),
             }}
-            src={`./assets/naslovna/${imgIndex === 12 ? 20 : imgIndex}.png`}
+            src={`./assets/naslovna/${
+              imgIndex === textMOD ? 20 : imgIndex
+            }.png`}
           />
         );
         imgIndex++;
