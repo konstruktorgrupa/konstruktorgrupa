@@ -17,6 +17,7 @@ function App() {
     "resize",
     function (event) {
       setScreenWidth(window.innerWidth);
+      setScreenHeight(window.innerHeight);
     },
     true
   );
