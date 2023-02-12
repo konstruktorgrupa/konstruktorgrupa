@@ -14,6 +14,7 @@ function Usluge(props) {
         // backgroundColor: "black",
         height: "100%",
         width: "100%",
+        padding: 0,
       }}
     >
       <div style={{ marginTop: "100px" }}>
@@ -23,7 +24,7 @@ function Usluge(props) {
             <br></br>
             <img
               style={{
-                maxWidth: props.screenWidth / 2,
+                maxWidth: props.screenWidth / 2.1,
                 maxHeight: props.screenWidth,
               }}
               src={"./assets/usluge/plin.png"}
@@ -34,7 +35,7 @@ function Usluge(props) {
             <br></br>
             <img
               style={{
-                maxWidth: props.screenWidth / 2,
+                maxWidth: props.screenWidth / 2.1,
                 maxHeight: props.screenWidth,
               }}
               src={"./assets/usluge/centralno.png"}
@@ -45,7 +46,7 @@ function Usluge(props) {
             <br></br>
             <img
               style={{
-                maxWidth: props.screenWidth / 2,
+                maxWidth: props.screenWidth / 2.1,
                 maxHeight: props.screenWidth,
               }}
               src={"./assets/usluge/vodovod.png"}
@@ -56,7 +57,7 @@ function Usluge(props) {
             <br></br>
             <img
               style={{
-                maxWidth: props.screenWidth / 2,
+                maxWidth: props.screenWidth / 2.1,
                 maxHeight: props.screenWidth,
               }}
               src={"./assets/usluge/toplina.png"}
@@ -67,7 +68,7 @@ function Usluge(props) {
             <br></br>
             <img
               style={{
-                maxWidth: props.screenWidth / 2,
+                maxWidth: props.screenWidth / 2.1,
                 maxHeight: props.screenWidth,
               }}
               src={"./assets/usluge/solar.png"}
@@ -78,7 +79,7 @@ function Usluge(props) {
             <br></br>
             <img
               style={{
-                maxWidth: props.screenWidth / 2,
+                maxWidth: props.screenWidth / 2.1,
                 maxHeight: props.screenWidth,
               }}
               src={"./assets/usluge/klima.png"}

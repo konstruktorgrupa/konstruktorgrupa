@@ -9,11 +9,12 @@
   display: grid;
   gap: 0px;
   grid-template-columns: auto auto;
-  padding: 10px;
+  padding: 0px;
+  margin: 0;
 }
 
 .grid-item {
-  padding: 10px;
+  padding: 0px;
 }
 
 .grid-container-naslovna {
