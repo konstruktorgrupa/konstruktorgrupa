@@ -2,21 +2,11 @@ import { useState } from "react";
 import SlikaFocus from "./SlikaFocus";
 
 function Slika(props) {
-  const [scrollOffset, setScrollOffset] = useState(0);
   function ImageBig() {
     document.getElementById("slikaFocus").style.display = "block";
     document.getElementById("menu").style.display = "none";
     document.getElementById("imgSrc").src = props.img;
   }
-
-  window.addEventListener(
-    "scroll",
-    function (event) {
-      setScreenWidth(window.innerWidth);
-      setScreenHeight(window.innerHeight);
-    },
-    true
-  );
 
   return (
     <div>
@@ -33,7 +23,7 @@ function Slika(props) {
       > */}
       <img
         style={{
-          width: props.screenWidth / 4,
+          width: props.screenWidth / 5,
           height: props.screenWidth / 4,
           overflow: "hidden",
         }}
