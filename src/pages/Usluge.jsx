@@ -41,7 +41,7 @@ function Usluge(props) {
             />
           </div>
           <div className="grid-item">
-            Vodovod i Odvodd
+            Vodovod i Odvod
             <br></br>
             <img
               style={{
