@@ -7,8 +7,6 @@ import Kontakt from "./pages/Kontakt";
 import ONama from "./pages/ONama";
 import Usluge from "./pages/Usluge";
 
-import Thrre3DText from "./comp/Three";
-
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
@@ -31,8 +29,6 @@ function App() {
       <Kontakt screenWidth={screenWidth} />
       <ONama />
       <Usluge screenWidth={screenWidth} />
-
-      {/* <Thrre3DText /> */}
     </div>
   );
 }
