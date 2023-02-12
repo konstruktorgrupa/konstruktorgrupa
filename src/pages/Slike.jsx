@@ -80,7 +80,7 @@ function Slike(props) {
         display: "none",
         top: 0,
         left: 0,
-        marginTop: "300px",
+        marginTop: "100px",
       }}
     >
       <div className="grid-container">

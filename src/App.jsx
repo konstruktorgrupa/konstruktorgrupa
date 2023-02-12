@@ -30,9 +30,9 @@ function App() {
       <Slike screenWidth={screenWidth} />
       <Kontakt screenWidth={screenWidth} />
       <ONama />
-      <Usluge />
+      <Usluge screenWidth={screenWidth} />
 
-      <Thrre3DText />
+      {/* <Thrre3DText /> */}
     </div>
   );
 }
