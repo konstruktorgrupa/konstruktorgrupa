@@ -9,6 +9,7 @@ import Usluge from "./pages/Usluge";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
   //test
 
@@ -24,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Menu screenWidth={screenWidth} />
-      <Naslovna />
+      <Naslovna screenWidth={screenWidth} screenHeight={screenHeight} />
       <Slike screenWidth={screenWidth} />
       <Kontakt screenWidth={screenWidth} />
       <ONama />
