@@ -23,7 +23,7 @@ function Slika(props) {
       > */}
       <img
         style={{
-          width: props.screenWidth / 5,
+          width: props.screenWidth / 4,
           height: props.screenWidth / 4,
           overflow: "hidden",
         }}
