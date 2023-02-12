@@ -17,7 +17,7 @@ function Usluge(props) {
         padding: 0,
       }}
     >
-      <div style={{ marginTop: "100px" }}>
+      <div style={{ marginTop: 35, color: "rgb(215,255,0)", fontSize: 30 }}>
         <div className="grid-container-usluge">
           <div className="grid-item">
             Plinske Instalacije
