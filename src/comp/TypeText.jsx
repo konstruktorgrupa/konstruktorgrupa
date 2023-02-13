@@ -59,7 +59,12 @@ function TypeText() {
   return (
     <div
       id="typetext"
-      style={{ fontSize: "300%", color: "rgb(215, 255, 0)", textAlign: "left" }}
+      style={{
+        fontSize: "320%",
+        fontWeight: "bold",
+        color: "rgb(215, 255, 0)",
+        textAlign: "left",
+      }}
     >
       <span className="blinking-cursor">|</span>
     </div>
