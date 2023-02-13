@@ -35,47 +35,24 @@ function Type() {
     wordIndex++;
 
     if (wordIndex === text.length) {
-      // setTimeout(() => {
-      //   el.innerHTML = "";
-      // }, 1000);
-
+      el.innerHTML = "";
       wordIndex = 0;
       senEnd = true;
       console.log("🚀 ~ file: TypeText.jsx:26 ~ Type ~ wordIndex", wordIndex);
     }
   }
 
-  if (senEnd !== true) {
-    setTimeout(() => {
+  setTimeout(
+    () => {
       Type();
-    }, 50);
-  } else {
-    CleartText(() => {
-      Type();
-    }, 2000);
-  }
+    },
+    senEnd === true ? 1000 : 50
+  );
   if (senEnd === true) {
     senEnd = false;
   }
   index++;
   olText = el.innerHTML;
-}
-
-function CleartText() {
-  let el = document.getElementById("typetext");
-  setTimeout(() => {
-    el.innerHTML = "";
-  }, 1000);
-  setTimeout(() => {
-    RestartType();
-  }, 1500);
-}
-
-function RestartType() {
-  el.innerHTML = "";
-  setTimeout(() => {
-    Type();
-  }, 1500);
 }
 
 function TypeText() {
