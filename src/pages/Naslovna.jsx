@@ -1,6 +1,9 @@
 import "./Grid.css";
 
-import TypeText from "../comp/TypeText.jsx";
+import "../type/Type.css";
+import Type from "../type/Type";
+
+// import TypeText from "../comp/TypeText.jsx";
 
 function Naslovna(props) {
   let desk = props.screenWidth > props.screenHeight ? 1 : -1;
@@ -46,7 +49,16 @@ function Naslovna(props) {
                     top: "100px",
                   }}
                 >
-                  <TypeText />
+                  {/* <TypeText /> */}
+                  <div
+                    style={{
+                      textAlign: "left !important",
+                      position: "absolute",
+                      left: "-60px",
+                    }}
+                  >
+                    <Type />
+                  </div>
                 </div>
               </div>
             );

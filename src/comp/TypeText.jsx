@@ -1,74 +1,105 @@
-import "./TypeText.css";
+// import "./TypeText.css";
 
-const text = [
-  "- PLINSKE INSTALACIJE",
-  "- CENTRALNO GRIJANJE",
-  "- VODOVOD I ODVOD",
-  "- DIZALICE TOPLINE",
-  "- SOLARNI SUSTAVI",
-  "- KLIMATIZACIJA",
-];
-let wordIndex = 0;
-let index = 0;
-let senEnd = false;
+// const text = [
+// "- PLINSKE INSTALACIJE",
+// "- CENTRALNO GRIJANJE",
+// "- VODOVOD I ODVOD",
+// "- DIZALICE TOPLINE",
+// "- SOLARNI SUSTAVI",
+// "- KLIMATIZACIJA",
+// ];
+// let wordIndex = 0;
+// let index = 0;
+// let senEnd = false;
 
-setTimeout(() => {
-  Type();
-}, 500);
+// setTimeout(() => {
+//   Type();
+// }, 500);
 
-let olText = "";
-function Type() {
-  let el = document.getElementById("typetext");
+// let cursor = 0;
+// let olText = "";
+// function Type() {
+//   let el = document.getElementById("typetext");
 
-  let nextL = (el.innerHTML =
-    text[wordIndex][index] === undefined
-      ? olText
-      : olText + text[wordIndex][index]);
+//   let nextL = (el.innerHTML =
+//     text[wordIndex][index] === undefined
+//       ? olText
+//       : olText + text[wordIndex][index]);
 
-  if (text[wordIndex].length <= index) {
-    // document.getElementById("typetext").innerHTML = "";
-    // el.innerHTML = "";
-    el.innerHTML += "\n";
-    index = -1;
+//   let elCur = document.getElementById("cursor");
+//   if (cursor === 0) {
+//     // elCur.innerHTML = "|";
+//     cursor++;
+//   } else {
+//     // elCur.innerHTML = "";
+//     cursor = 0;
+//   }
 
-    console.log("🚀 ~ file: TypeText.jsx:22 ~ Type ~ text.length", text.length);
-    wordIndex++;
+//   if (text[wordIndex].length <= index) {
+//     // document.getElementById("typetext").innerHTML = "";
+//     // el.innerHTML = "";
+//     el.innerHTML += "\n";
+//     index = -1;
 
-    if (wordIndex === text.length) {
-      el.innerHTML = "";
-      wordIndex = 0;
-      senEnd = true;
-      console.log("🚀 ~ file: TypeText.jsx:26 ~ Type ~ wordIndex", wordIndex);
-    }
-  }
+//     console.log("🚀 ~ file: TypeText.jsx:22 ~ Type ~ text.length", text.length);
+//     wordIndex++;
 
-  setTimeout(
-    () => {
-      Type();
-    },
-    senEnd === true ? 1000 : 50
-  );
-  if (senEnd === true) {
-    senEnd = false;
-  }
-  index++;
-  olText = el.innerHTML;
-}
+//     if (wordIndex === text.length) {
+//       el.innerHTML = "";
+//       wordIndex = 0;
+//       senEnd = true;
+//       console.log("🚀 ~ file: TypeText.jsx:26 ~ Type ~ wordIndex", wordIndex);
+//     }
+//   }
 
-function TypeText() {
-  return (
-    <div
-      id="typetext"
-      style={{
-        fontSize: "320%",
-        fontWeight: "bold",
-        color: "rgb(215, 255, 0)",
-        textAlign: "left",
-      }}
-    >
-      <span className="blinking-cursor">|</span>
-    </div>
-  );
-}
+//   setTimeout(
+//     () => {
+//       Type();
+//     },
+//     senEnd === true ? 1000 : 75
+//   );
+//   if (senEnd === true) {
+//     senEnd = false;
+//   }
+//   index++;
+//   olText = el.innerHTML;
+// }
 
-export default TypeText;
+// function TypeText() {
+//   return (
+//     <div>
+//       <div
+//         id="typetext"
+//         style={{
+//           fontSize: "320%",
+//           fontWeight: "bold",
+//           color: "rgb(215, 255, 0)",
+//           textAlign: "left",
+//         }}
+//       >
+//         {/* <span
+//           className="cursor"
+//           style={{
+//             fontSize: "320%",
+//             fontWeight: "bold",
+//             color: "rgb(215, 255, 0)",
+//             textAlign: "left",
+//           }}
+//         ></span> */}
+//         {/* <div
+//           style={{
+//             fontSize: "320%",
+//             fontWeight: "bold",
+//             color: "rgb(215, 255, 0)",
+//             textAlign: "left",
+//           }}
+//           className="blinking-cursor"
+//         >
+//           |
+//         </div> */}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default TypeText;

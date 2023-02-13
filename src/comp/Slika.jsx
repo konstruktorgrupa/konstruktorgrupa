@@ -2,6 +2,20 @@ import { useState } from "react";
 import SlikaFocus from "./SlikaFocus";
 
 function Slika(props) {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  // const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+
+  //test
+
+  window.addEventListener(
+    "resize",
+    function (event) {
+      setScreenWidth(window.innerWidth);
+      // setScreenHeight(window.innerHeight);
+    },
+    true
+  );
+
   function ImageBig() {
     document.getElementById("slikaFocus").style.display = "block";
     document.getElementById("menu").style.display = "none";
@@ -23,9 +37,10 @@ function Slika(props) {
       > */}
       <img
         style={{
-          width: props.screenWidth / 4,
-          height: props.screenWidth / 4,
+          width: screenWidth / 4.2,
+          height: screenWidth / 4.2,
           overflow: "hidden",
+          border: "2px solid lime",
         }}
         src={props.img}
         onClick={ImageBig}

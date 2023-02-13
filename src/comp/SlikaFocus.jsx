@@ -23,7 +23,7 @@ function SlikaFocus(props) {
         display: "none",
         bottom: -scrollOffset,
         left: 0,
-        backgroundColor: "rgb(0,0,0,0.8",
+        // backgroundColor: "rgb(0,0,0,0.8",
         height: "100%",
         width: "100%",
         textAlign: "center",

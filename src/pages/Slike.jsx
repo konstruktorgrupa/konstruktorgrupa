@@ -40,26 +40,26 @@ function Slike(props) {
     let index = 1;
     let checkImg = false;
 
-    LoadImgs();
-    function LoadImgs() {
-      // for (let i = 0; i < imgList.length; i++) {
+    // LoadImgs();
+    // function LoadImgs() {
+    for (let i = 0; i < imgList.length; i++) {
       images.push(
         <div key={index} className="grid-item">
           <Slika
             screenWidth={props.screenWidth}
-            img={`./assets/img/${imgList[index]}`}
+            img={`./assets/img/${imgList[i]}`}
           />
         </div>
       );
       const url = `/assets/img/${index + 2}.png`;
       imageExists(url).then((ok) => (checkImg = ok));
-      setTimeout(() => {
-        // console.log("🚀 ~ file: Slike.jsx:50 ~ LoadImgs ~ checkImg", checkImg);
-        if (checkImg === true) {
-          LoadImgs();
-          index++;
-        }
-      }, 50);
+      // setTimeout(() => {
+      //   // console.log("🚀 ~ file: Slike.jsx:50 ~ LoadImgs ~ checkImg", checkImg);
+      //   if (checkImg === true) {
+      //     LoadImgs();
+      //     index++;
+      //   }
+      // }, 50);
     }
 
     checkRun++;
