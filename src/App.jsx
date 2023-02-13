@@ -7,6 +7,8 @@ import Kontakt from "./pages/Kontakt";
 import ONama from "./pages/ONama";
 import Usluge from "./pages/Usluge";
 
+import TypeText from "./comp/TypeText.jsx";
+
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
@@ -30,6 +32,8 @@ function App() {
       <Kontakt screenWidth={screenWidth} />
       <ONama />
       <Usluge screenWidth={screenWidth} />
+
+      {/* <TypeText /> */}
     </div>
   );
 }
