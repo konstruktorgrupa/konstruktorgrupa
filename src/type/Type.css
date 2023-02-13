@@ -8,8 +8,8 @@
     position: 'absolute';
     font-size: 3.5em;
     margin: 0;
-    left: -250px important;
-    font-family: "Courier New";
+    /* left: -250px important; */
+    /* font-family: "Lobster"; */
     text-align: left;
     color: rgb(215, 255, 0);
     font-weight: bold;

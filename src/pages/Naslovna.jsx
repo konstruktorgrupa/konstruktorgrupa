@@ -54,6 +54,7 @@ function Naslovna(props) {
                     style={{
                       textAlign: "left !important",
                       position: "absolute",
+                      top: "-50px",
                       left: "-60px",
                     }}
                   >

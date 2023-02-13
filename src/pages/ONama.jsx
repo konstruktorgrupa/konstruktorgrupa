@@ -3,8 +3,14 @@ function ONama() {
     <div id="onama" style={{ display: "none", left: 0 }}>
       <div>
         <h1>
-          UVOĐENJE INSTALACIJA VODOVODA, KANALIZACIJE I PLINA I INSTALACIJE ZA
-          GRIJANJE I KLIMATIZACIJU
+          Naša firma se specijalizira za uvođenje instalacija vodovoda,
+          kanalizacije, plina te instalacija za grijanje i klimatizaciju. Naš
+          stručni tim pruža kvalitetne usluge, a naši iskusni stručnjaci koriste
+          najnoviju tehnologiju i materijale kako bi osigurali sigurnost i
+          pouzdanost vaših instalacija. Pružamo usluge za različite vrste
+          objekata, bilo da se radi o privatnim kućama, poslovnim prostorima ili
+          industrijskim objektima. Naš cilj je osigurati da vaši sustavi rade
+          učinkovito i pouzdano kako bi vaša svakodnevica bila ugodna i udobna.
           <br></br>
           <br></br>
           RADNO VRIJEME
