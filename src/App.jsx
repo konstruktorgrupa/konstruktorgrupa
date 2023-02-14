@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Menu from "./comp/Menu";
 import Naslovna from "./pages/Naslovna";
-// import Slike from "./pages/Slike";
+// import Slike from "./pages/Slike1";
 import Kontakt from "./pages/Kontakt";
 import ONama from "./pages/ONama";
 import Usluge from "./pages/Usluge";
@@ -34,6 +34,7 @@ function App() {
       <Kontakt screenWidth={screenWidth} />
       <ONama />
       <Usluge screenWidth={screenWidth} />
+      {/* <Slike /> */}
     </div>
   );
 }
