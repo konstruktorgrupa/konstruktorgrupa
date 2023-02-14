@@ -2,10 +2,12 @@ import "./App.css";
 import { useState } from "react";
 import Menu from "./comp/Menu";
 import Naslovna from "./pages/Naslovna";
-import Slike from "./pages/Slike";
+// import Slike from "./pages/Slike";
 import Kontakt from "./pages/Kontakt";
 import ONama from "./pages/ONama";
 import Usluge from "./pages/Usluge";
+
+import Galerija from "./pages/Galerija";
 
 // import Type from "./type/Type.jsx";
 
@@ -28,7 +30,7 @@ function App() {
     <div className="App">
       <Menu screenWidth={screenWidth} />
       <Naslovna screenWidth={screenWidth} screenHeight={screenHeight} />
-      <Slike screenWidth={screenWidth} />
+      <Galerija screenWidth={screenWidth} />
       <Kontakt screenWidth={screenWidth} />
       <ONama />
       <Usluge screenWidth={screenWidth} />

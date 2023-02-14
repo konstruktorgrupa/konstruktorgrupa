@@ -16,7 +16,6 @@ function Naslovna(props) {
     let imgIndex = 0;
     for (let i = 0; i < 3 + desk; i++) {
       for (let e = 0; e < 3 + mob; e++) {
-        console.log("🚀 ~ file: Naslovna.jsx:18 ~ NaslovnaSlike ~ e ", e);
         imgIndex !== textMOD
           ? nasSlike.push(
               <img
@@ -66,7 +65,6 @@ function Naslovna(props) {
         imgIndex++;
       }
     }
-    console.log("🚀 ~ file: Naslovna.jsx:76 ~ Naslovna ~ nasSlike", nasSlike);
   }
   NaslovnaSlike();
 
