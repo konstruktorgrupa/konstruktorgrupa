@@ -235,17 +235,17 @@ function WidthHeight(imgSrc, i) {
 }
 
 for (let i = 0; i < 195; i++) {
-  const widHei = WidthHeight(`/assets/galerija/${i + 1}.jpg`, i);
+  const widHei = WidthHeight(`./assets/galerija/${i + 1}.jpg`, i);
 
   images.push(
     <Item
-      original={`/assets/galerija/${i + 1}.jpg`}
-      thumbnail={`/assets/galerija/${i}.jpg`}
+      original={`./assets/galerija/${i + 1}.jpg`}
+      thumbnail={`./assets/galerija/${i}.jpg`}
       width={imageWH2[i][0]}
       height={imageWH2[i][1]}
     >
       {({ ref, open }) => (
-        <img ref={ref} onClick={open} src={`/assets/thumb/${3}.png`} />
+        <img ref={ref} onClick={open} src={`./assets/thumb/${3}.png`} />
       )}
     </Item>
   );
