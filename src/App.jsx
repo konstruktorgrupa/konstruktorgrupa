@@ -9,7 +9,13 @@ import Usluge from "./pages/Usluge";
 
 import Galerija from "./pages/Galerija";
 
-// import Type from "./type/Type.jsx";
+// import CropThumbs from "./comp/CropThumbs.jsx";
+
+// TODO issue with galery showing up on naslovna on first load
+setTimeout(() => {
+  document.getElementById("slike").style.display = "none";
+  // document.getElementById("naslovna").style.display = "block";
+}, 500);
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -34,7 +40,8 @@ function App() {
       <Kontakt screenWidth={screenWidth} />
       <ONama />
       <Usluge screenWidth={screenWidth} />
-      {/* <Slike /> */}
+
+      {/* <CropThumbs /> */}
     </div>
   );
 }

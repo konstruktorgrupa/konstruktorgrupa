@@ -59,7 +59,7 @@ function Menu(props) {
         style={{ width: props.screenWidth / 5, color: slikeS }}
         onClick={() => MenuHandle("slike")}
       >
-        SLIKE
+        GALERIJA
       </h1>
       <h1
         className="menu"

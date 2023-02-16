@@ -4,13 +4,17 @@ function ONama() {
       <div>
         <h1>
           Naša firma se specijalizira za uvođenje instalacija vodovoda,
-          kanalizacije, plina te instalacija za grijanje i klimatizaciju. Naš
-          stručni tim pruža kvalitetne usluge, a naši iskusni stručnjaci koriste
-          najnoviju tehnologiju i materijale kako bi osigurali sigurnost i
-          pouzdanost vaših instalacija. Pružamo usluge za različite vrste
-          objekata, bilo da se radi o privatnim kućama, poslovnim prostorima ili
-          industrijskim objektima. Naš cilj je osigurati da vaši sustavi rade
-          učinkovito i pouzdano kako bi vaša svakodnevica bila ugodna i udobna.
+          kanalizacije, plina te instalacija za grijanje i klimatizaciju.
+          <br></br>
+          Naš stručni tim pruža kvalitetne usluge, a naši iskusni stručnjaci
+          koriste najnoviju tehnologiju i materijale kako bi osigurali sigurnost
+          i pouzdanost vaših instalacija.
+          <br></br> <br></br>
+          Pružamo usluge za različite vrste objekata, bilo da se radi o
+          privatnim kućama, poslovnim prostorima ili industrijskim objektima.
+          <br></br>
+          Naš cilj je osigurati da vaši sustavi rade učinkovito i pouzdano kako
+          bi vaša svakodnevica bila ugodna i udobna.
           <br></br>
           <br></br>
           RADNO VRIJEME
