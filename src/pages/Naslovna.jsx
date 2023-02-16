@@ -26,6 +26,7 @@ function Naslovna(props) {
                     left: (i * props.screenWidth) / (3 + desk),
                     top: (e * props.screenWidth) / (3 + desk) + 35,
                     maxWidth: props.screenWidth / (3 + desk),
+                    zIndex: 10,
                   }}
                   src={`./assets/naslovna/${imgIndex}.png`}
                 />
@@ -46,21 +47,11 @@ function Naslovna(props) {
                 <div
                   style={{
                     position: "absolute",
-                    left: (i * props.screenWidth) / (3 + desk),
+                    left: (i * props.screenWidth) / (3 + desk) - 50,
                     top: "100px",
                   }}
                 >
-                  {/* <TypeText /> */}
-                  <div
-                    style={{
-                      textAlign: "left !important",
-                      position: "absolute",
-                      top: "-50px",
-                      left: "-60px",
-                    }}
-                  >
-                    <Type />
-                  </div>
+                  <Type />
                 </div>
               </div>
             );

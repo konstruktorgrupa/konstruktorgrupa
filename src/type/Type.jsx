@@ -75,7 +75,7 @@ setTimeout(() => {
 
 function Type() {
   return (
-    <div>
+    <div style={{ backgroundColor: "rgba(0, 0, 0,0.5)" }}>
       <pre id="typewriter">
         {`
         - PLINSKE INSTALACIJE
@@ -83,8 +83,7 @@ function Type() {
         - VODOVOD I ODVOD
         - DIZALICE TOPLINE
         - SOLARNI SUSTAVI
-        - KLIMATIZACIJA
-        `}
+        - KLIMATIZACIJA                                                                                    `}
       </pre>
     </div>
   );
