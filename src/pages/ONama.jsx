@@ -1,7 +1,13 @@
-function ONama() {
+import ONamaAni from "../comp/ONamaAni";
+
+function ONama(props) {
   return (
     <div id="onama" style={{ display: "none", left: 0 }}>
-      <div>
+      <ONamaAni
+        screenWidth={props.screenWidth}
+        screenHeight={props.screenHeight}
+      />
+      <div style={{ position: "absolute", top: 100, left: 10 }}>
         <h1>
           Naša firma se specijalizira za uvođenje instalacija vodovoda,
           kanalizacije, plina te instalacija za grijanje i klimatizaciju.

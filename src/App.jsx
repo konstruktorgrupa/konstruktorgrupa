@@ -38,7 +38,7 @@ function App() {
       <Naslovna screenWidth={screenWidth} screenHeight={screenHeight} />
       <Galerija screenWidth={screenWidth} />
       <Kontakt screenWidth={screenWidth} />
-      <ONama />
+      <ONama screenWidth={screenWidth} screenHeight={screenHeight} />
       <Usluge screenWidth={screenWidth} />
 
       {/* <CropThumbs /> */}
