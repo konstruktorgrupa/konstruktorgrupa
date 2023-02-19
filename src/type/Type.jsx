@@ -78,7 +78,7 @@ function Type() {
     <div style={{ backgroundColor: "rgba(0, 0, 0,0.5)" }}>
       <pre id="typewriter">
         {`
-        - PLINSKE INSTALACIJE
+        - PLINSKE INSTALACIJE                    
         - CENTRALNO GRIJANJE
         - VODOVOD I ODVOD
         - DIZALICE TOPLINE

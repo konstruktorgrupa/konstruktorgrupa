@@ -14,7 +14,10 @@ import Galerija from "./pages/Galerija";
 // TODO issue with galery showing up on naslovna on first load
 setTimeout(() => {
   document.getElementById("slike").style.display = "none";
-  // document.getElementById("naslovna").style.display = "block";
+
+  // for testing
+  document.getElementById("naslovna").style.display = "none";
+  document.getElementById("onama").style.display = "block";
 }, 500);
 
 function App() {
@@ -31,6 +34,24 @@ function App() {
     },
     true
   );
+
+  function disableselect(e) {
+    return false;
+  }
+
+  function reEnable() {
+    return true;
+  }
+
+  document.onselectstart = new Function(" return false");
+
+  if (window.sidebar) {
+    document.onmousedown = disableselect;
+    document.onClick = reEnable;
+  }
+
+  //full screen
+  // setTimeout(() => document.documentElement.requestFullscreen(), 2000);
 
   return (
     <div className="App">
