@@ -32,8 +32,8 @@
 
 
 .menu {
-  font-size: 5vh;
-  height: 5%;
+  font-size: 3vmin;
+  height: 3vmin;
 }
 .menu:hover {
   /* background-image: url('/public/assets/img/sahovnica.svg'); */
