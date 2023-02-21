@@ -7,10 +7,18 @@ import Type from "../type/Type";
 
 let run = 0;
 function Naslovna(props) {
-  let desk = props.screenWidth > props.screenHeight ? 1 : -1;
-  let mob = props.screenWidth < props.screenHeight ? 1 : 0;
+  const controlHeight =
+    props.screenHeight > window.screen.availHeight
+      ? window.screen.availHeight
+      : props.screenHeight;
+  console.log(
+    "🚀 ~ file: Naslovna.jsx:11 ~ Naslovna ~ controlHeight",
+    controlHeight
+  );
+  let desk = props.screenWidth > controlHeight ? 1 : -1;
+  let mob = props.screenWidth < controlHeight ? 1 : 0;
 
-  let textMOD = props.screenWidth > props.screenHeight ? 9 : 4;
+  let textMOD = props.screenWidth > controlHeight ? 9 : 4;
 
   let nasSlike = [];
   function NaslovnaSlike() {
