@@ -26,7 +26,7 @@ function Naslovna(props) {
                   left: (i * props.screenWidth) / (3 + desk),
                   top: (e * props.screenWidth) / (3 + desk) + 35,
                   maxWidth: props.screenWidth / (3 + desk),
-                  zIndex: 10,
+                  zIndex: 1,
                 }}
                 src={`./assets/naslovna/${imgIndex}.png`}
               />
