@@ -34,7 +34,7 @@ function App() {
   function vhToPixels(vh) {
     return Math.round((vmin / (100 / vh)) * 3);
   }
-  const marginTop = vhToPixels(vhv) / 1.73;
+  const marginTop = vhToPixels(vhv);
 
   //test
 

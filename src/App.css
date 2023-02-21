@@ -41,7 +41,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-size: 3vh
+  font-size: 3vmin
 }
 .menu.react:hover {
   background-image: url('/public/assets/img/sahovnica.svg');

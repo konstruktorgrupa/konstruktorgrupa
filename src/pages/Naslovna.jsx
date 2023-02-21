@@ -32,7 +32,7 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left: (i * props.screenWidth) / (3 + desk),
-                  top: (e * props.screenWidth) / (3 + desk) + props.marginTop,
+                  top: (e * props.screenWidth) / (3 + desk),
 
                   maxWidth: props.screenWidth / (3 + desk),
                   zIndex: 1,
