@@ -3,11 +3,28 @@ import ONamaAni from "../comp/ONamaAni";
 function ONama(props) {
   return (
     <div id="onama" style={{ display: "none", left: 0 }}>
-      <ONamaAni
-        screenWidth={props.screenWidth}
-        screenHeight={props.screenHeight}
-      />
-      <div style={{ position: "absolute", top: 100, left: 10 }}>
+      <div style={{ zIndex: "0 !important" }}>
+        <ONamaAni
+          screenWidth={props.screenWidth}
+          screenHeight={props.screenHeight}
+        />
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: 36,
+          // left: 10,
+          // margin: "auto",
+          left: 0,
+          right: 0,
+          width: "80%",
+          // border: "3px solid green",
+          // padding: "10px",
+          zIndex: "10 !important",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      >
         <h1>
           Naša firma se specijalizira za uvođenje instalacija vodovoda,
           kanalizacije, plina te instalacija za grijanje i klimatizaciju.

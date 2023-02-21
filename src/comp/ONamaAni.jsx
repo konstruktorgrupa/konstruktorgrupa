@@ -29,7 +29,7 @@ function GetDistance() {
   const distance =
     heightOrWidth / 3 / 2 +
     heightOrWidth / 3 / 2 / 2 +
-    heightOrWidth / 3 / 2 / 11;
+    heightOrWidth / 3 / 2 / 15;
   return distance;
 }
 
