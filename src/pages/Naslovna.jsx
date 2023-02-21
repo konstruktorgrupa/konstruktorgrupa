@@ -11,8 +11,13 @@ function Naslovna(props) {
   let mob = props.screenWidth < props.screenHeight ? 1 : 0;
 
   let textMOD = props.screenWidth > props.screenHeight ? 9 : 4;
-  const marginTop = props.screenHeight * 0.1;
-  console.log("🚀 ~ file: Naslovna.jsx:15 ~ Naslovna ~ marginTop", marginTop);
+  let vhh = Math.round(window.innerHeight / 100);
+  console.log("🚀 ~ file: Naslovna.jsx:15 ~ Naslovna ~ vhh", vhh);
+  function vhToPixels(vh) {
+    return Math.round(window.innerHeight / (100 / vh));
+  }
+  const marginTop = vhToPixels(vhh);
+  console.log("🚀 ~ file: Naslovna.jsx:20 ~ Naslovna ~ marginTop", marginTop);
 
   let nasSlike = [];
   function NaslovnaSlike() {
@@ -26,7 +31,7 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left: (i * props.screenWidth) / (3 + desk),
-                  top: (e * props.screenWidth) / (3 + desk) + "calc(5vmin)",
+                  top: (e * props.screenWidth) / (3 + desk) + marginTop,
                   maxWidth: props.screenWidth / (3 + desk),
                   zIndex: 1,
                 }}
@@ -41,7 +46,7 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left: (i * props.screenWidth) / (3 + desk),
-                  top: (e * props.screenWidth) / (3 + desk) + "calc(5vmin)",
+                  top: (e * props.screenWidth) / (3 + desk) + marginTop,
                   maxWidth: props.screenWidth / (3 + desk),
                 }}
                 src={`./assets/naslovna/${21}.png`}
