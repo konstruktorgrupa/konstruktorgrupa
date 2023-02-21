@@ -7,7 +7,7 @@ function Kontakt(props) {
       style={{
         display: "none",
         position: "absolute",
-        top: "10px",
+        top: props.marginTop + 20,
         left: "10px",
       }}
     >

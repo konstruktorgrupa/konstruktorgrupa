@@ -12,18 +12,6 @@ function Naslovna(props) {
 
   let textMOD = props.screenWidth > props.screenHeight ? 9 : 4;
 
-  const vmin =
-    window.innerWidth > window.innerHeight
-      ? window.innerHeight
-      : window.innerWidth;
-
-  let vhv = Math.round(vmin / 100);
-
-  function vhToPixels(vh) {
-    return Math.round((vmin / (100 / vh)) * 3);
-  }
-  const marginTop = vhToPixels(vhv);
-
   let nasSlike = [];
   function NaslovnaSlike() {
     let imgIndex = 0;
@@ -36,10 +24,7 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left: (i * props.screenWidth) / (3 + desk),
-                  top:
-                    (e * props.screenWidth) / (3 + desk) +
-                    marginTop / 1.73 +
-                    "px",
+                  top: (e * props.screenWidth) / (3 + desk) + props.marginTop,
 
                   maxWidth: props.screenWidth / (3 + desk),
                   zIndex: 1,
@@ -55,7 +40,7 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left: (i * props.screenWidth) / (3 + desk),
-                  top: (e * props.screenWidth) / (3 + desk),
+                  top: (e * props.screenWidth) / (3 + desk) + props.marginTop,
                   maxWidth: props.screenWidth / (3 + desk),
                 }}
                 src={`./assets/naslovna/${21}.png`}

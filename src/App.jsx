@@ -24,6 +24,18 @@ function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
+  const vmin =
+    window.innerWidth > window.innerHeight
+      ? window.innerHeight
+      : window.innerWidth;
+
+  const vhv = Math.round(vmin / 100);
+
+  function vhToPixels(vh) {
+    return Math.round((vmin / (100 / vh)) * 3);
+  }
+  const marginTop = vhToPixels(vhv) / 1.73;
+
   //test
 
   window.addEventListener(
@@ -56,11 +68,15 @@ function App() {
   return (
     <div className="App">
       <Menu screenWidth={screenWidth} />
-      <Naslovna screenWidth={screenWidth} screenHeight={screenHeight} />
+      <Naslovna
+        screenWidth={screenWidth}
+        screenHeight={screenHeight}
+        marginTop={marginTop}
+      />
       <Galerija screenWidth={screenWidth} />
-      <Kontakt screenWidth={screenWidth} />
+      <Kontakt screenWidth={screenWidth} marginTop={marginTop} />
       <ONama screenWidth={screenWidth} screenHeight={screenHeight} />
-      <Usluge screenWidth={screenWidth} />
+      <Usluge screenWidth={screenWidth} marginTop={marginTop} />
 
       {/* <CropThumbs /> */}
     </div>
