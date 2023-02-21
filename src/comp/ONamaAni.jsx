@@ -129,8 +129,8 @@ function ONamaAni(props) {
         className="logoAni1"
         style={{
           position: "absolute",
-          left: screenCenter[0] - stateHeightOrWidth / 3 / 2,
-          top: screenCenter[1] - stateHeightOrWidth / 3 / 2,
+          left: window.innerWidth / 2 - stateHeightOrWidth / 3 / 2, //  screenCenter[0] - props.screenWidth / 3 / 2,
+          top: window.innerHeight / 2 - stateHeightOrWidth / 3 / 2, //  screenCenter[1] - props.innerHeight / 3 / 2,
 
           height: stateHeightOrWidth / 3,
           filter: "brightness(30%)",
@@ -141,6 +141,7 @@ function ONamaAni(props) {
       <img
         className="logoAni1"
         style={{
+          zIndex: 0,
           position: "absolute",
 
           left:

@@ -16,8 +16,8 @@ setTimeout(() => {
   document.getElementById("slike").style.display = "none";
 
   // for testing
-  document.getElementById("naslovna").style.display = "none";
-  document.getElementById("onama").style.display = "block";
+  // document.getElementById("naslovna").style.display = "none";
+  // document.getElementById("onama").style.display = "block";
 }, 500);
 
 function App() {

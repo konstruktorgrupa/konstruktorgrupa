@@ -25,15 +25,15 @@ function ONama(props) {
           <br></br>
           RADNO VRIJEME
           <br></br>
-          ponedjeljak 08:00 – 17:00
+          ponedjeljak 08:00 – 16:00
           <br></br>
-          utorak 08:00 – 17:00
+          utorak 08:00 – 16:00
           <br></br>
-          srijeda 08:00 – 17:00
+          srijeda 08:00 – 16:00
           <br></br>
-          četvrtak 08:00 – 17:00
+          četvrtak 08:00 – 16:00
           <br></br>
-          petak 08:00 – 17:00
+          petak 08:00 – 16:00
           <br></br>
           subota ZATVORENO
           <br></br>
