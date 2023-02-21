@@ -32,8 +32,8 @@
 
 
 .menu {
-  font-size: 15px;
-  height: 15px
+  font-size: 5vh;
+  height: 5%;
 }
 .menu:hover {
   /* background-image: url('/public/assets/img/sahovnica.svg'); */
@@ -41,7 +41,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-size: 15px
+  font-size: 5vh
 }
 .menu.react:hover {
   background-image: url('/public/assets/img/sahovnica.svg');
