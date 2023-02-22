@@ -8,14 +8,14 @@ import Type from "../type/Type";
 let run = 0;
 function Naslovna(props) {
   const controlHeight =
-    props.screenHeight > window.screen.availHeight
+    window.innerHeight > window.screen.availHeight
       ? window.screen.availHeight
-      : props.screenHeight;
+      : window.innerHeight;
 
-  let desk = props.screenWidth > controlHeight ? 1 : -1;
-  let mob = props.screenWidth < controlHeight ? 1 : 0;
+  let desk = window.innerWidth > controlHeight ? 1 : -1;
+  let mob = window.innerWidth < controlHeight ? 1 : 0;
 
-  let textMOD = props.screenWidth > controlHeight ? 9 : 4;
+  let textMOD = window.innerWidth > controlHeight ? 9 : 4;
 
   let nasSlike = [];
   function NaslovnaSlike() {
@@ -28,10 +28,10 @@ function Naslovna(props) {
               <img
                 style={{
                   position: "absolute",
-                  left: (i * props.screenWidth) / (3 + desk),
-                  top: (e * props.screenWidth) / (3 + desk) + props.marginTop,
+                  left: (i * window.innerWidth) / (3 + desk),
+                  top: (e * window.innerWidth) / (3 + desk) + props.marginTop,
 
-                  maxWidth: props.screenWidth / (3 + desk),
+                  maxWidth: window.innerWidth / (3 + desk),
                   zIndex: 1,
                 }}
                 src={`./assets/naslovna/${imgIndex}.png`}
@@ -44,9 +44,9 @@ function Naslovna(props) {
               <img
                 style={{
                   position: "absolute",
-                  left: (i * props.screenWidth) / (3 + desk),
-                  top: (e * props.screenWidth) / (3 + desk) + props.marginTop,
-                  maxWidth: props.screenWidth / (3 + desk),
+                  left: (i * window.innerWidth) / (3 + desk),
+                  top: (e * window.innerWidth) / (3 + desk) + props.marginTop,
+                  maxWidth: window.innerWidth / (3 + desk),
                   filter: "brightness(40%)",
                 }}
                 src={`./assets/naslovna/${21}.png`}
@@ -55,8 +55,8 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left:
-                    (i * props.screenWidth) / (3 + desk) -
-                    (i * props.screenWidth) / (3 + desk) / 20,
+                    (i * window.innerWidth) / (3 + desk) -
+                    (i * window.innerWidth) / (3 + desk) / 20,
                   top: props.marginTop,
                 }}
               >

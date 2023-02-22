@@ -36,7 +36,6 @@ function App() {
   }
   const menuTop = vhToPixels(vhv);
   let marginTop = menuTop >= 30 ? 30 : menuTop;
-  console.log("🚀 ~ file: App.jsx:38 ~ App ~ marginTop", marginTop);
 
   //test
 
