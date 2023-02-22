@@ -21,8 +21,8 @@ function Naslovna(props) {
   function NaslovnaSlike() {
     let imgIndex = 0;
     for (let i = 0; i < 3 - 1; i++) {
-      for (let e = 0; e < 3 + 0; e++) {
-        if (imgIndex !== 9) {
+      for (let e = 0; e < 4; e++) {
+        if (imgIndex !== 4) {
           nasSlike.push(
             <div key={imgIndex}>
               <img
@@ -38,7 +38,7 @@ function Naslovna(props) {
               />
             </div>
           );
-        } else if (imgIndex === textMOD) {
+        } else if (imgIndex === 4) {
           nasSlike.push(
             <div key={imgIndex}>
               <img
@@ -55,8 +55,8 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left:
-                    (i * window.innerWidth) / (3 + desk) -
-                    (i * window.innerWidth) / (3 + desk) / 20,
+                    (i * window.innerWidth) / (3 - 1) -
+                    (i * window.innerWidth) / (3 - 1) / 20,
                   top: props.marginTop,
                 }}
               >
