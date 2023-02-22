@@ -11,10 +11,7 @@ function Naslovna(props) {
     props.screenHeight > window.screen.availHeight
       ? window.screen.availHeight
       : props.screenHeight;
-  console.log(
-    "🚀 ~ file: Naslovna.jsx:11 ~ Naslovna ~ controlHeight",
-    controlHeight
-  );
+
   let desk = props.screenWidth > controlHeight ? 1 : -1;
   let mob = props.screenWidth < controlHeight ? 1 : 0;
 
