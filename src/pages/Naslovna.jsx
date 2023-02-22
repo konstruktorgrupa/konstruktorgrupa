@@ -12,26 +12,26 @@ function Naslovna(props) {
       ? window.screen.availHeight
       : window.innerHeight;
 
-  let desk = window.innerWidth > controlHeight ? 1 : -1;
-  let mob = window.innerWidth < controlHeight ? 1 : 0;
+  // let desk = window.innerWidth > controlHeight ? 1 : -1;
+  // let mob = window.innerWidth < controlHeight ? 1 : 0;
 
-  let textMOD = window.innerWidth > controlHeight ? 9 : 4;
+  // let textMOD = window.innerWidth > controlHeight ? 9 : 4;
 
   let nasSlike = [];
   function NaslovnaSlike() {
     let imgIndex = 0;
-    for (let i = 0; i < 3 + desk; i++) {
-      for (let e = 0; e < 3 + mob; e++) {
-        if (imgIndex !== textMOD) {
+    for (let i = 0; i < 3 - 1; i++) {
+      for (let e = 0; e < 3 + 0; e++) {
+        if (imgIndex !== 9) {
           nasSlike.push(
             <div key={imgIndex}>
               <img
                 style={{
                   position: "absolute",
-                  left: (i * window.innerWidth) / (3 + desk),
-                  top: (e * window.innerWidth) / (3 + desk), // + props.marginTop,
+                  left: (i * window.innerWidth) / (3 - 1),
+                  top: (e * window.innerWidth) / (3 - 1), // + props.marginTop,
 
-                  maxWidth: window.innerWidth / (3 + desk),
+                  maxWidth: window.innerWidth / (3 - 1),
                   zIndex: 1,
                 }}
                 src={`./assets/naslovna/${imgIndex}.png`}
@@ -44,9 +44,9 @@ function Naslovna(props) {
               <img
                 style={{
                   position: "absolute",
-                  left: (i * window.innerWidth) / (3 + desk),
-                  top: (e * window.innerWidth) / (3 + desk), // + props.marginTop,
-                  maxWidth: window.innerWidth / (3 + desk),
+                  left: (i * window.innerWidth) / (3 - 1),
+                  top: (e * window.innerWidth) / (3 - 1), // + props.marginTop,
+                  maxWidth: window.innerWidth / (3 - 1),
                   filter: "brightness(40%)",
                 }}
                 src={`./assets/naslovna/${21}.png`}
