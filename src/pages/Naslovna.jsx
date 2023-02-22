@@ -29,7 +29,7 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left: (i * window.innerWidth) / (3 + desk),
-                  top: (e * window.innerWidth) / (3 + desk) + props.marginTop,
+                  top: (e * window.innerWidth) / (3 + desk), // + props.marginTop,
 
                   maxWidth: window.innerWidth / (3 + desk),
                   zIndex: 1,
@@ -45,7 +45,7 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left: (i * window.innerWidth) / (3 + desk),
-                  top: (e * window.innerWidth) / (3 + desk) + props.marginTop,
+                  top: (e * window.innerWidth) / (3 + desk), // + props.marginTop,
                   maxWidth: window.innerWidth / (3 + desk),
                   filter: "brightness(40%)",
                 }}
