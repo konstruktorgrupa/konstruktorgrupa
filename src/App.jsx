@@ -29,12 +29,13 @@ function App() {
       ? window.innerHeight
       : window.innerWidth;
 
-  const vhv = Math.round(vmin / 100);
+  const vhv = vmin / 100;
 
   function vhToPixels(vh) {
     return Math.round((vmin / (100 / vh)) * 3);
   }
   const marginTop = vhToPixels(vhv);
+  console.log("🚀 ~ file: App.jsx:38 ~ App ~ marginTop", marginTop);
 
   //test
 
@@ -67,7 +68,7 @@ function App() {
 
   return (
     <div className="App">
-      <Menu screenWidth={screenWidth} />
+      <Menu screenWidth={screenWidth} marginTop={marginTop} />
       <Naslovna
         screenWidth={screenWidth}
         screenHeight={screenHeight}

@@ -75,7 +75,7 @@ setTimeout(() => {
 
 function Type() {
   return (
-    <div style={{ backgroundColor: "rgba(0, 0, 0,0.5)" }}>
+    <div>
       <pre id="typewriter">
         {`
         - PLINSKE INSTALACIJE                    

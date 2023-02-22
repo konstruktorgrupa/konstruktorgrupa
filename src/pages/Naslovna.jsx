@@ -32,7 +32,7 @@ function Naslovna(props) {
                 style={{
                   position: "absolute",
                   left: (i * props.screenWidth) / (3 + desk),
-                  top: (e * props.screenWidth) / (3 + desk),
+                  top: (e * props.screenWidth) / (3 + desk) + props.marginTop,
 
                   maxWidth: props.screenWidth / (3 + desk),
                   zIndex: 1,
@@ -50,6 +50,7 @@ function Naslovna(props) {
                   left: (i * props.screenWidth) / (3 + desk),
                   top: (e * props.screenWidth) / (3 + desk) + props.marginTop,
                   maxWidth: props.screenWidth / (3 + desk),
+                  filter: "brightness(40%)",
                 }}
                 src={`./assets/naslovna/${21}.png`}
               />
@@ -59,7 +60,7 @@ function Naslovna(props) {
                   left:
                     (i * props.screenWidth) / (3 + desk) -
                     (i * props.screenWidth) / (3 + desk) / 20,
-                  top: "36px",
+                  top: props.marginTop,
                 }}
               >
                 <Type />

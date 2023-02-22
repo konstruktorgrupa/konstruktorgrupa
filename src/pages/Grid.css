@@ -27,3 +27,8 @@
 .grid-item-naslovna {
   padding: 0;
 }
+
+#naslovna {
+  margin-top: 3vmin;
+  padding: 100px
+  }

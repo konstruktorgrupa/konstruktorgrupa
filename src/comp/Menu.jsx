@@ -39,12 +39,12 @@ function Menu(props) {
         display: "flex",
         backgroundColor: "rgb(215,255,0,0.9",
         zIndex: 100,
-        // fontSize: "30px",
+        fontSize: props.marginTop / 8,
         color: "blue",
         // height: '300px',
         margin: 0,
         padding: 0,
-        // height: "7%",
+        height: props.marginTop,
       }}
     >
       <h1

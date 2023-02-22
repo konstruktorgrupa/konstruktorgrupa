@@ -31,17 +31,18 @@
 }
 
 
+
 .menu {
-  font-size: 3vmin;
-  height: 3vmin;
+  /* font-size: 3vmin;
+  height: 3vmin; */
 }
 .menu:hover {
   /* background-image: url('/public/assets/img/sahovnica.svg'); */
-  background: -webkit-linear-gradient(red,red, red,red, white, white, blue, blue, blue);
+  background: -webkit-linear-gradient( red,red, white,  blue, blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-size: 3vmin
+  /* font-size: 3vmin */
 }
 .menu.react:hover {
   background-image: url('/public/assets/img/sahovnica.svg');
