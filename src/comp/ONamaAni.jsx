@@ -84,7 +84,7 @@ function testAni() {
       CalcOuterCircPos(
         heightOrWidth / 2,
         window.innerWidth / 2,
-        GetDistance() + angle2 / 3,
+        GetDistance() + angle2 / 6,
         angle2 - circPos[i]
       ).x -
       heightOrWidth / 3 / 2 / 2 +
@@ -94,7 +94,7 @@ function testAni() {
       CalcOuterCircPos(
         heightOrWidth / 2,
         window.innerWidth / 2,
-        GetDistance() + angle2 / 3,
+        GetDistance() + angle2 / 6,
 
         angle2 - circPos[i]
       ).y -
