@@ -49,35 +49,60 @@ function Menu(props) {
     >
       <h1
         className="menu"
-        style={{ width: props.screenWidth / 5, color: naslovnaS }}
+        style={{
+          minWidth: "20vw",
+          color: naslovnaS,
+          textAlign: "center",
+          display: "inline-block",
+        }}
         onClick={() => MenuHandle("naslovna")}
       >
         NASLOVNA
       </h1>
       <h1
         className="menu"
-        style={{ width: props.screenWidth / 5, color: slikeS }}
+        style={{
+          minWidth: "20vw",
+          color: slikeS,
+          textAlign: "center",
+          display: "inline-block",
+        }}
         onClick={() => MenuHandle("slike")}
       >
         GALERIJA
       </h1>
       <h1
         className="menu"
-        style={{ width: props.screenWidth / 5, color: uslugeS }}
+        style={{
+          minWidth: "20vw",
+          color: uslugeS,
+          textAlign: "center",
+          display: "inline-block",
+        }}
         onClick={() => MenuHandle("usluge")}
       >
         USLUGE
       </h1>
       <h1
         className="menu"
-        style={{ width: props.screenWidth / 5, color: kontktS }}
+        style={{
+          minWidth: "20vw",
+          color: kontktS,
+          textAlign: "center",
+          display: "inline-block",
+        }}
         onClick={() => MenuHandle("kontakt")}
       >
         KONTAKT
       </h1>
       <h1
         className="menu"
-        style={{ width: props.screenWidth / 5, color: onamaS }}
+        style={{
+          minWidth: "20vw",
+          color: onamaS,
+          textAlign: "center",
+          display: "inline-block",
+        }}
         onClick={() => MenuHandle("onama")}
       >
         O NAMA

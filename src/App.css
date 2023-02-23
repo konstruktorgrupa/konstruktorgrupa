@@ -35,6 +35,15 @@
 .menu {
   /* font-size: 3vmin;
   height: 3vmin; */
+  display: flex;
+}
+
+
+.menu.space-around {
+  justify-content: space-around;
+}
+.menu.space-between {  
+  justify-content: space-between;
 }
 .menu:hover {
   /* background-image: url('/public/assets/img/sahovnica.svg'); */
