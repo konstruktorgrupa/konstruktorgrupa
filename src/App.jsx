@@ -18,7 +18,7 @@ setTimeout(() => {
   // for testing
   // document.getElementById("naslovna").style.display = "none";
   // document.getElementById("onama").style.display = "block";
-}, 500);
+}, 100);
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

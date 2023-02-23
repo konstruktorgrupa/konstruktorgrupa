@@ -88,7 +88,7 @@ function Naslovna(props) {
           position: "absolute",
           left: 0,
           top: props.marginTop,
-          width: "100vw",
+          width: props.screenWidth,
         }}
         src={
           window.innerWidth > window.innerHeight
