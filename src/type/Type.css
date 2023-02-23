@@ -15,7 +15,7 @@
     font-weight: bold;
     top: 15vmin;
     /* background-color: red; */
-
+width: 20vw
 }
 #typewriter:after {
     content: "|";
