@@ -1,6 +1,10 @@
 import ONamaAni from "../comp/ONamaAni";
 
 function ONama(props) {
+  console.log(
+    "🚀 ~ file: ONama.jsx:16 ~ ONama ~ props.MarginTop",
+    props.marginTop
+  );
   return (
     <div id="onama" style={{ display: "none", left: 0 }}>
       <div style={{ zIndex: "0 !important" }}>
@@ -9,10 +13,12 @@ function ONama(props) {
           screenHeight={props.screenHeight}
         />
       </div>
+
       <div
         style={{
           position: "absolute",
-          top: 36,
+          top: props.marginTop * 2,
+
           // left: 10,
           // margin: "auto",
           left: 0,

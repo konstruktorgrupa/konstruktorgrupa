@@ -77,7 +77,11 @@ function App() {
       />
       <Galerija screenWidth={screenWidth} />
       <Kontakt screenWidth={screenWidth} marginTop={marginTop} />
-      <ONama screenWidth={screenWidth} screenHeight={screenHeight} />
+      <ONama
+        screenWidth={screenWidth}
+        screenHeight={screenHeight}
+        marginTop={marginTop}
+      />
       <Usluge screenWidth={screenWidth} marginTop={marginTop} />
 
       {/* <CropThumbs /> */}
