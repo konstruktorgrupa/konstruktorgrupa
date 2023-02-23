@@ -67,17 +67,17 @@ function testAni() {
   let onamaANi = document.getElementsByClassName("logoAni1");
 
   for (let i = 1; i < 9; i++) {
-    onamaANi[0].style.height = heightOrWidth / 3 - angle2 / 1.6 + "px";
+    onamaANi[0].style.height = heightOrWidth / 3 - angle2 / 3 + "px";
     onamaANi[0].style.transform = `rotate(${angle2}deg)`;
     onamaANi[0].style.left =
-      window.innerWidth / 2 - heightOrWidth / 3 / 2 + angle2 / 1.6 / 2 + "px";
+      window.innerWidth / 2 - heightOrWidth / 3 / 2 + angle2 / 3 / 2 + "px";
 
     onamaANi[0].style.top =
-      heightOrWidth / 2 - heightOrWidth / 3 / 2 + angle2 / 1.6 / 2 + "px";
+      heightOrWidth / 2 - heightOrWidth / 3 / 2 + angle2 / 3 / 2 + "px";
 
     // left: screenCenter[0] - stateHeightOrWidth / 3 / 2,
     // top: screenCenter[1] - stateHeightOrWidth / 3 / 2,
-    onamaANi[i].style.height = heightOrWidth / 3 / 2 - angle2 / 3 + "px";
+    onamaANi[i].style.height = heightOrWidth / 3 / 2 - angle2 / 5 + "px";
 
     onamaANi[i].style.transform = `rotate(${-angle2}deg)`;
     onamaANi[i].style.left =
