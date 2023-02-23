@@ -35,7 +35,8 @@ function App() {
     return Math.round((vmin / (100 / vh)) * 3);
   }
   const menuTop = vhToPixels(vhv);
-  let marginTop = menuTop >= 30 ? 30 : menuTop;
+  const desoOrMob = window.innerWidth > window.innerHeight ? 65 : 35;
+  let marginTop = menuTop >= desoOrMob ? desoOrMob : menuTop;
 
   //test
 
