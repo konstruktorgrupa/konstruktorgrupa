@@ -21,8 +21,8 @@ setTimeout(() => {
 }, 100);
 
 function App() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+  const [screenWidth, setScreenWidth] = useState(window.screen.availWidth);
+  const [screenHeight, setScreenHeight] = useState(window.screen.availHeight);
 
   const vmin =
     window.innerWidth > window.innerHeight
@@ -44,7 +44,7 @@ function App() {
     "resize",
     function (event) {
       setScreenWidth(window.screen.availWidth);
-      setScreenHeight(window.innerHeight);
+      setScreenHeight(window.screen.availHeight);
     },
     true
   );
