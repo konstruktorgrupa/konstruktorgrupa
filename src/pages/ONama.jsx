@@ -29,7 +29,7 @@ function ONama(props) {
           zIndex: "10 !important",
           marginLeft: "auto",
           marginRight: "auto",
-          fontSize: "0.7vmin",
+          fontSize: "1vmin",
         }}
       >
         <h1>
