@@ -33,16 +33,16 @@ function ONama(props) {
         }}
       >
         <h1>
-          Mi se ponosimo našom dugogodišnjom tradicijom i iskustvom u radu sa
-          svim vrstama instalacija. Naši stručnjaci su osposobljeni za
-          obavljanje svih vrsta radova, od manjih popravaka do većih projekata
-          koji uključuju postavljanje kompletnih sustava u novim ili postojećim
+          Zahvaljujući našoj dugogodišnjoj tradiciji i iskustvu u radu sa svim
+          vrstama instalacija. Naši stručnjaci su osposobljeni za obavljanje
+          svih vrsta radova, od manjih popravaka do većih projekata koji
+          uključuju postavljanje kompletnih sustava u novim ili postojećim
           objektima.
           <br></br>
           <br></br>
           Kada radimo na vašem projektu, koristimo najbolje materijale i alate
           kako bismo osigurali dugotrajnost i pouzdanost vaših instalacija.
-          Svaki projekt pristupamo individualno, pa su svi naši radovi
+          Svakom projektu pristupamo individualno, pa su svi naši radovi
           prilagođeni vašim potrebama i željama.
           <br></br> <br></br>
           Naša usluga ne staje nakon instalacije sustava, jer vam također nudimo
