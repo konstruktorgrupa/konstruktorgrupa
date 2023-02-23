@@ -83,7 +83,7 @@ function Type() {
         - VODOVOD I ODVOD
         - DIZALICE TOPLINE
         - SOLARNI SUSTAVI
-        - KLIMATIZACIJA                                                                                    `}
+        - KLIMATIZACIJA`}
       </pre>
     </div>
   );

@@ -6,7 +6,7 @@
 }
 #typewriter {
     /* position: 'absolute'; */
-    font-size: 1.5vmax ;
+    /* font-size: 2vmin ; */
     margin: 0;
     /* left: -250px important; */
     /* font-family: "Lobster"; */
@@ -14,6 +14,8 @@
     color: rgb(215, 255, 0);
     font-weight: bold;
     top: 15vmin;
+    /* background-color: red; */
+
 }
 #typewriter:after {
     content: "|";
