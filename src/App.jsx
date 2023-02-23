@@ -43,7 +43,7 @@ function App() {
   window.addEventListener(
     "resize",
     function (event) {
-      setScreenWidth(window.innerWidth);
+      setScreenWidth(window.screen.availWidth);
       setScreenHeight(window.innerHeight);
     },
     true
