@@ -14,10 +14,10 @@ function Naslovna(props) {
           position: "absolute",
           left: 0,
           top: props.marginTop,
-          width: props.screenWidth,
+          width: "100%", //props.screenWidth,
         }}
         src={
-          window.innerWidth > window.innerHeight
+          props.screenWidth > props.screenHeight
             ? `./assets/naslovna/desk1.png`
             : `./assets/naslovna/mobile2.png`
         }
@@ -31,7 +31,8 @@ function Naslovna(props) {
               : props.screenWidth / 2 - props.screenWidth / 4 / 8,
 
           top: props.marginTop * 2,
-          fontSize: window.innerWidth > window.innerHeight ? "3vmin" : "2vmin",
+          fontSize:
+            window.innerWidth > window.innerHeight ? "3vmin" : "2.5vmin",
         }}
       >
         <Type />

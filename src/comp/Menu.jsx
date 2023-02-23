@@ -45,13 +45,13 @@ function Menu(props) {
         margin: 0,
         padding: 0,
         height: props.marginTop,
-        width: props.screenWidth,
+        width: "100vw", //props.screenWidth,
       }}
     >
       <h1
         className="menu"
         style={{
-          minWidth: props.screenWidth / 5,
+          minWidth: "20vw", //props.screenWidth / 5,
           color: naslovnaS,
           textAlign: "center",
           display: "inline-block",
@@ -63,7 +63,7 @@ function Menu(props) {
       <h1
         className="menu"
         style={{
-          minWidth: props.screenWidth / 5,
+          minWidth: "20vw", //props.screenWidth / 5,
           color: slikeS,
           textAlign: "center",
           display: "inline-block",
@@ -75,7 +75,7 @@ function Menu(props) {
       <h1
         className="menu"
         style={{
-          minWidth: props.screenWidth / 5,
+          minWidth: "20vw", //props.screenWidth / 5,
           color: uslugeS,
           textAlign: "center",
           display: "inline-block",
@@ -87,7 +87,7 @@ function Menu(props) {
       <h1
         className="menu"
         style={{
-          minWidth: props.screenWidth / 5,
+          minWidth: "20vw", //props.screenWidth / 5,
           color: kontktS,
           textAlign: "center",
           display: "inline-block",
@@ -99,7 +99,7 @@ function Menu(props) {
       <h1
         className="menu"
         style={{
-          minWidth: props.screenWidth / 5,
+          minWidth: "20vw", //props.screenWidth / 5,
           color: onamaS,
           textAlign: "center",
           display: "inline-block",

@@ -21,8 +21,8 @@ setTimeout(() => {
 }, 100);
 
 function App() {
-  const [screenWidth, setScreenWidth] = useState(window.screen.availWidth);
-  const [screenHeight, setScreenHeight] = useState(window.screen.availHeight);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
 
   const vmin =
     window.innerWidth > window.innerHeight
@@ -43,8 +43,8 @@ function App() {
   window.addEventListener(
     "resize",
     function (event) {
-      setScreenWidth(window.screen.availWidth);
-      setScreenHeight(window.screen.availHeight);
+      setScreenWidth(window.innerWidth);
+      setScreenHeight(window.innerHeight);
     },
     true
   );
@@ -75,7 +75,7 @@ function App() {
         screenHeight={screenHeight}
         marginTop={marginTop}
       />
-      <Galerija screenWidth={screenWidth} />
+      <Galerija screenWidth={screenWidth} marginTop={marginTop} />
       <Kontakt screenWidth={screenWidth} marginTop={marginTop} />
       <ONama
         screenWidth={screenWidth}
