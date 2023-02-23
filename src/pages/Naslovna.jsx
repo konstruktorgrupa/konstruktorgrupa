@@ -92,8 +92,8 @@ function Naslovna(props) {
         }}
         src={
           window.innerWidth > window.innerHeight
-            ? `./assets/naslovna/desk.png`
-            : `./assets/naslovna/mobile1.png`
+            ? `./assets/naslovna/desk1.png`
+            : `./assets/naslovna/mobile2.png`
         }
       />
       <div
