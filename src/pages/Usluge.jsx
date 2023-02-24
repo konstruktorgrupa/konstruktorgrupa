@@ -21,7 +21,7 @@ function Usluge(props) {
         style={{
           marginTop: props.marginTop + 20,
           color: "rgb(215,255,0)",
-          backgroundColor: "rgba(30,30,30,0",
+          backgroundColor: "rgba(30,30,30,0.5",
         }}
       >
         <div className="grid-container-usluge">
