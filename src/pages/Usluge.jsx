@@ -10,7 +10,7 @@ function Usluge(props) {
         display: "none",
         top: 0,
         left: 0,
-        fontSize: "3vmin",
+        fontSize: "4vmin",
         // backgroundColor: "black",
         height: "100%",
         width: "100%",
