@@ -1,4 +1,5 @@
 import "./Grid.css";
+import Three from "../comp/three/Three";
 
 // import TypeText from "../comp/TypeText.jsx";
 
@@ -19,6 +20,17 @@ function Naslovna(props) {
             : `./assets/naslovna/mobile2.png`
         }
       />
+      <div
+        style={{
+          position: "absolute",
+          right: 0,
+          top: props.marginTop,
+          width: props.screenWidth > props.screenHeight ? "25vw" : "50vw",
+          height: props.screenWidth > props.screenHeight ? "25vw" : "50vw",
+        }}
+      >
+        <Three />
+      </div>
     </div>
   );
 }

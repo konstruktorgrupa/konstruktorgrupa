@@ -11,8 +11,6 @@ import Galerija from "./pages/Galerija";
 
 import TextEffect from "./comp/textEffect/TextEffect";
 
-import Three from "./comp/three/Three";
-
 // TODO issue with galery showing up on naslovna on first load
 setTimeout(() => {
   document.getElementById("slike").style.display = "none";
@@ -87,17 +85,6 @@ function App() {
       />
       <Usluge screenWidth={screenWidth} marginTop={marginTop} />
 
-      <div
-        style={{
-          position: "absolute",
-          right: 0,
-          top: marginTop,
-          width: screenWidth > screenHeight ? "25vw" : "50vw",
-          height: screenWidth > screenHeight ? "25vw" : "50vw",
-        }}
-      >
-        <Three marginTop={marginTop} />
-      </div>
       {/* <div
         style={{
           position: "absolute",

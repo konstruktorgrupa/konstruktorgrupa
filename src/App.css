@@ -9,6 +9,16 @@
   font-size: 0.3rem;
   font-family: 'Gentium Book Plus', serif;
   font-weight: bold;
+  --font-color: black;
+  color: black;
+}
+[data-theme="dark"] {
+  --primary-color: rgb(107, 106, 134);
+  --secondary-color: #818cab;
+  --font-color: white;
+  --bg-color: #4d5055;
+  --heading-color: #63656d;
+  --color: white; 
 }
 
 .klogo {

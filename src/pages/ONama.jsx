@@ -1,12 +1,23 @@
 import ONamaAni from "../comp/ONamaAni";
 
 function ONama(props) {
-  console.log(
-    "🚀 ~ file: ONama.jsx:16 ~ ONama ~ props.MarginTop",
-    props.marginTop
-  );
+  // dark-mode media query matched or not
+  let matched = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (matched) console.log("Currently in dark mode");
+  else console.log("Currently not in dark mode");
+
   return (
-    <div id="onama" style={{ display: "none", left: 0 }}>
+    <div
+      id="onama"
+      style={{
+        display: "none",
+        width: "100vw",
+        height: "100vh",
+
+        left: 0,
+      }}
+    >
       <div style={{ zIndex: "0 !important" }}>
         <ONamaAni
           screenWidth={props.screenWidth}
@@ -17,8 +28,8 @@ function ONama(props) {
       <div
         style={{
           position: "absolute",
-          top: props.marginTop * 2,
-
+          top: props.marginTop,
+          backgroundColor: matched ? "rgba(0,0,0,0)" : "rgba(255,255,255,0.5)",
           // left: 10,
           // margin: "auto",
           left: 0,
@@ -30,6 +41,7 @@ function ONama(props) {
           marginLeft: "auto",
           marginRight: "auto",
           fontSize: "1.5vmin",
+          color: matched ? "white" : "black",
         }}
       >
         <h1>
