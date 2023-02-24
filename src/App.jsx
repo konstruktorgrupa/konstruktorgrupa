@@ -9,7 +9,9 @@ import Usluge from "./pages/Usluge";
 
 import Galerija from "./pages/Galerija";
 
-// import CropThumbs from "./comp/CropThumbs.jsx";
+import TextEffect from "./comp/textEffect/TextEffect";
+
+import Three from "./comp/three/Three";
 
 // TODO issue with galery showing up on naslovna on first load
 setTimeout(() => {
@@ -37,6 +39,7 @@ function App() {
   const menuTop = vhToPixels(vhv);
   const desoOrMob = window.innerWidth > window.innerHeight ? 65 : 35;
   let marginTop = menuTop >= desoOrMob ? desoOrMob : menuTop;
+  console.log("🚀 ~ file: App.jsx:42 ~ App ~ marginTop", marginTop);
 
   //test
 
@@ -84,7 +87,16 @@ function App() {
       />
       <Usluge screenWidth={screenWidth} marginTop={marginTop} />
 
-      {/* <CropThumbs /> */}
+      <Three marginTop={marginTop} />
+      {/* <div
+        style={{
+          position: "absolute",
+          top: marginTop + "px",
+          left: (window.innerWidth / 4) * 2,
+        }}
+      >
+        <TextEffect />
+      </div> */}
     </div>
   );
 }
