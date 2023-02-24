@@ -87,7 +87,17 @@ function App() {
       />
       <Usluge screenWidth={screenWidth} marginTop={marginTop} />
 
-      <Three marginTop={marginTop} />
+      <div
+        style={{
+          position: "absolute",
+          right: 0,
+          top: marginTop,
+          width: screenWidth > screenHeight ? "25vw" : "50vw",
+          height: screenWidth > screenHeight ? "25vw" : "50vw",
+        }}
+      >
+        <Three marginTop={marginTop} />
+      </div>
       {/* <div
         style={{
           position: "absolute",

@@ -9,7 +9,7 @@ function MyText() {
   const ref = useRef();
   const ref2 = useRef();
   const params = {
-    size: 1,
+    size: 1.2,
     height: 0.005,
 
     bevelEnabled: true,
