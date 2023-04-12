@@ -49,14 +49,6 @@ export default function TextEffect(props) {
   }, 200);
   return (
     <div className="coolShadow">
-      <p>
-        - PLINSKE INSTALACIJE
-        <br></br>- CENTRALNO GRIJANJE
-        <br></br>- VODOVOD I ODVOD
-        <br></br>- DIZALICE TOPLINE
-        <br></br>- SOLARNI SUSTAVI
-        <br></br>- KLIMATIZACIJA
-      </p>
     </div>
   );
 }
