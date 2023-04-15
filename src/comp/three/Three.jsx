@@ -21,10 +21,9 @@ export default function Three(props) {
         {/* <color attach="background" args={["#232323"]} /> */}
         <OrbitControls makeDefault maxDistance={40} />
         <ambientLight intensity={1} />
-        <pointLight position={[1, 1, 60]} color="white" />
+        <pointLight position={[10, 10, 10]} color="#d7ff00" />
         <Suspense fallback={null}>
           <MyText />
-          {/* <Particles /> */}
         </Suspense>
       </Canvas>
 
