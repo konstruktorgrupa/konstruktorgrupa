@@ -17,7 +17,7 @@ import { useState } from "react";
 export default function Three(props) {
   return (
     <>
-      <Canvas dpr={[1, 2]} camera={{ position: [-5, 0, 15] }}>
+      <Canvas dpr={[1, 2]} camera={{ position: [-5, 0, 16] }}>
         {/* <color attach="background" args={["#232323"]} /> */}
         <OrbitControls makeDefault maxDistance={40} />
         <ambientLight intensity={1} />
