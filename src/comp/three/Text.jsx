@@ -67,6 +67,11 @@ function MyText() {
           flatShading={params.flatShading}
           wireframe={params.wireframe}
         />
+        <meshStandardMaterial
+          flatShading={params.flatShading}
+          wireframe={params.wireframe}
+          color={"rgb(201, 237, 0)"}
+        />
       </mesh>
       {/* <mesh ref={ref2} position={[-3, -1, 0]}>
         <textGeometry args={["Coming soon...", config2]} />
