@@ -63,14 +63,17 @@ function MyText() {
             config,
           ]}
         />
-        <meshNormalMaterial
+        {/* <meshNormalMaterial
           flatShading={params.flatShading}
           wireframe={params.wireframe}
-        />
+        /> */}
         <meshStandardMaterial
-          flatShading={params.flatShading}
-          wireframe={params.wireframe}
-          color={"rgb(201, 237, 0)"}
+          // flatShading={params.flatShading}
+          // wireframe={params.wireframe}
+          color={"#d7ff00"}
+          emissive={"#000000"}
+          roughness={0.6}
+          metalness={0.7}
         />
       </mesh>
       {/* <mesh ref={ref2} position={[-3, -1, 0]}>
