@@ -19,9 +19,9 @@ export default function Three(props) {
     <>
       <Canvas dpr={[1, 2]} camera={{ position: [-5, 0, 15] }}>
         {/* <color attach="background" args={["#232323"]} /> */}
-        {/* <OrbitControls makeDefault maxDistance={40} /> */}
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} color="#d7ff00" />
+        <OrbitControls makeDefault maxDistance={40} />
+        <ambientLight intensity={1} />
+        <pointLight position={[10, 10, 10]} color="white" />
         <Suspense fallback={null}>
           <MyText />
           {/* <Particles /> */}

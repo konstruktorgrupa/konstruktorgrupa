@@ -72,8 +72,8 @@ function MyText() {
           // wireframe={params.wireframe}
           color={"#d7ff00"}
           emissive={"#000000"}
-          roughness={0.6}
-          metalness={0.7}
+          roughness={0.5}
+          metalness={0.93}
         />
       </mesh>
       {/* <mesh ref={ref2} position={[-3, -1, 0]}>
